@@ -10,7 +10,7 @@ public class DeathPlane : MonoBehaviour
 
         if (Collider.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene("level select");
         }
     }
 }
