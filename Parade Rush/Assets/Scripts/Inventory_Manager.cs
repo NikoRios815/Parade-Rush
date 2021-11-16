@@ -8,7 +8,7 @@ public class Inventory_Manager : MonoBehaviour
     public static Inventory_Manager instance;
     public Text Item_Amount;
 
-    int Item_Count = 0;
+    public static float Item_Count;
 
     private void Awake()
     {
@@ -17,7 +17,8 @@ public class Inventory_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Item_Amount.text = Item_Count.ToString();
+
+        Item_Count = 0;
     }
 
     // Update is called once per frame
